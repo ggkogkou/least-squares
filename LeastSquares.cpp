@@ -1,12 +1,12 @@
 #include "LeastSquares.hpp"
 
-least_squares::LeastSquares::LeastSquares(){
-    // Empty constructor
+least_squares::LeastSquares::LeastSquares(std::string file){
+    filename = file;
 }
 
 void least_squares::LeastSquares::parse_data(){
     std::fstream read_data;
-    read_data.open("data.txt");
+    read_data.open(filename);
 
     if(!read_data){
         std::cout << "Error... data.txt couldn't open\n";

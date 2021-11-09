@@ -37,6 +37,12 @@ namespace least_squares{
 class LeastSquares {
     private:
         // Variables
+
+        /**
+         * @brief the name of file containg the data
+         * 
+         */
+        std::string filename;
         /**
          * @brief a vector with x points as given in the data.txt
          * @see data.txt
@@ -110,7 +116,7 @@ class LeastSquares {
          * @brief Construct a new Least Squares object
          * 
          */
-        LeastSquares();
+        LeastSquares(std::string file);
 
         /**
          * @brief implementation of least squares method
@@ -124,6 +130,15 @@ class LeastSquares {
          * 
          */
         void printf_polynomial();
+
+        /**
+         * @brief Get the coefficients object
+         * 
+         * @return auto 
+         */
+        auto get_coefficients(){
+            return coefficients;
+        }
 
 }; // class LeastSquares
 } // namespace least_squares
