@@ -1,4 +1,4 @@
-#include "LeastSquares.hpp"
+#include "../inc/LeastSquares.hpp"
 
 #include<cstdlib> /// for std::atoi
 #include<string> // for std::string

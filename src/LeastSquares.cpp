@@ -1,4 +1,4 @@
-#include "LeastSquares.hpp"
+#include "../inc/LeastSquares.hpp"
 
 least_squares::LeastSquares::LeastSquares(std::string file){
     filename = file;
