@@ -1,7 +1,7 @@
-#include "../LeastSquares.hpp"
+#include "../inc/LeastSquares.hpp"
 
 #define CATCH_CONFIG_MAIN
-#include "catch.hpp"
+#include "./catch.hpp"
 
 TEST_CASE("Test 1", "[vector]"){
     // Declare least_squares::LeastSquares object 
